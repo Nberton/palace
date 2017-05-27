@@ -20,4 +20,5 @@ Copyright Nathan Berton 2017
 ## Test commands
 - ```pytest <file>```
 - ```pytest --cov=. <file>``` 
+- ```py.test --cov-report term-missing --cov=. <file>```
 

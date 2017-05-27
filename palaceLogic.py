@@ -55,3 +55,18 @@ def test_card_priority_5_queen():
 	card1 = Card('Clubs',5)
 	card2 = Card('Hearts',12)
 	assert(card_priority(card1,card2) == -1)
+
+def test_card_priority_8_10():
+	card1 = Card('Clubs',8)
+	card2 = Card('Hearts',10)
+	assert(card_priority(card1,card2) == -1)
+
+def test_card_priority_10_8():
+	card1 = Card('Clubs',10)
+	card2 = Card('Hearts',8)
+	assert(card_priority(card1,card2) == 1)
+
+def test_card_priority_8_8():
+	card1 = Card('Clubs',8)
+	card2 = Card('Hearts',8)
+	assert(card_priority(card1,card2) == 0)
