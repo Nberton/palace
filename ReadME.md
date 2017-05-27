@@ -22,3 +22,5 @@ Copyright Nathan Berton 2017
 - ```pytest --cov=. <file>``` 
 - ```py.test --cov-report term-missing --cov=. <file>```
 
+## Other Resources
+- [oh look a rule set](http://www.practicallypoppy.com/game-night/game-night-palace-card-game/)

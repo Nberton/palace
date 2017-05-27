@@ -9,18 +9,18 @@ class Card(object):
 		self.suit = suitName
 		self.value = val
 
-	def str(self):
+	def __str__(self):
 		#figure out value
 		valStr = ""
-		if self.value <10:
+		if self.value <= 10:
 			valStr = str(self.value)
-		elif self.value == 10:
-			valStr = "Jack"
 		elif self.value == 11:
-			valStr = "Queen"
+			valStr = "Jack"
 		elif self.value == 12:
+			valStr = "Queen"
+		elif self.value == 13:
 			valStr = 'King'
-		elif self.Value == 13:
+		elif self.value == 14:
 			valStr = 'Ace'
 		#suit is already a string so return nice format
 		return valStr + " of " + self.suit
