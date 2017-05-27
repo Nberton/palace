@@ -15,9 +15,3 @@ class Player(object):
 		# put all the cards into 1 list 
 		# sort them using a custom sort function
 		# take the best three and put them on top (this may not be best play)
-	
-	# probably useless to you on a plane but here is the documentation
-	# https://docs.python.org/2/library/functions.html#cmp
-	# its the cmp function we are basing this on
-	# cmp(x,y) 
-	# important part is -1 means x < y , 0 means x == y , 1 means x > y
