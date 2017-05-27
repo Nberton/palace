@@ -41,4 +41,5 @@ def test_adjust_top():
 	player.adjust_top()
 	player.print_hand()
 	player.print_top()
-	# assert(player.top() == [Card(Hearts,2)])
+	correct_top = [Card('Clubs',2),Card('Clubs',10),Card('Hearts',2)]
+	assert(player.top == correct_top)

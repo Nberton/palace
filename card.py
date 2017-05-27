@@ -25,6 +25,9 @@ class Card(object):
 		#suit is already a string so return nice format
 		return valStr + " of " + self.suit
 
+	def __eq__(self,other):
+		return (self.value == other.value and self.suit == other.suit)
+
 	def shortP(self):
 		if self.value <10:
 			valStr = str(self.value)
